@@ -48,7 +48,6 @@ header{
     display: flex;
     justify-items: center;
     align-items: center;
-    padding: 1rem;
     padding-left: 3rem;
     padding-right: 3rem;
 }
@@ -60,14 +59,19 @@ div.site-logo {
 ul.nav-links {
     display: flex;
     justify-content: center;
-    gap: 3rem;
+    align-items: center;
 }
+
 li.nav-item {
     list-style: none;
     font-weight: 400;
     letter-spacing: 0.125rem;
+    padding: 1.5rem;
 }
 
+.this-page {
+    background-color: #333333;
+}
 
 /*
 ------------
