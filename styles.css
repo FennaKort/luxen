@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    text-decoration: none;
+    scrollbar-color: #ddac62 #e4caa4;
+}
+
+body {
+    background-color: #333333;
+    color: #e4caa4;
+}
+
+h1, h2, li.nav-item {
+    font-family: 'Roboto Mono', 'Courier New', Courier, monospace;
+    font-weight: 700;
+    color: #ddac62;
+    
+}
+
+h3 {
+    font-family: 'Roboto Mono', 'Courier New', Courier, monospace;
+    font-weight: 100;    
+    color: #ddac62;
+}
+
+img, iframe, picture, video {
+    display: block;
+    max-width: 100%;
+    max-height: auto;
+}
+
+/*
+-------------------
+HEADER AND SITE NAV
+-------------------
+*/
+div.site-header {
+    background-color: #191919;
+}
+header{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    padding: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+div.site-logo {
+    flex-grow: 1;
+}
+
+ul.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+li.nav-item {
+    list-style: none;
+    font-weight: 400;
+    letter-spacing: 0.125rem;
+}
+
+
+/*
+------------
+MAIN CONTENT
+------------
+*/
+article {
+    padding: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
