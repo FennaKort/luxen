@@ -11,6 +11,11 @@
 body {
     background-color: #333333;
     color: #e4caa4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    max-width: 100%;
+    max-height: auto;
 }
 
 h1, h2, li.nav-item {
@@ -28,8 +33,7 @@ h3 {
 
 img, iframe, picture, video {
     display: block;
-    max-width: 100%;
-    max-height: auto;
+
 }
 
 /*
@@ -38,7 +42,7 @@ HEADER AND SITE NAV
 -------------------
 */
 div.site-header {
-    background-color: #191919;
+    background-color: black;
 }
 header{
     display: flex;
@@ -70,8 +74,47 @@ li.nav-item {
 MAIN CONTENT
 ------------
 */
+main {
+    flex: 1;
+}
+main.my-luxen-hero {
+    background-image: url(images/train-platform-ronaldo-santos-1920w.jpg);
+    background-attachment: fixed;
+    background-size: auto auto;
+    background-position: 55% 45%;
+    background-repeat: no-repeat;
+}
+
+@media (orientation: portrait) {
+    main.my-luxen-hero {
+        background-attachment: fixed;
+        background-size: auto auto;
+        background-position: 55% 45%;
+        background-repeat: no-repeat;
+    }
+}
+
 article {
     padding: 1rem;
     padding-left: 3rem;
     padding-right: 3rem;
+}
+
+article.my-luxen-hero {
+    display: flex;
+    flex-direction: column;
+    min-height: 70vh;
+}
+
+.my-luxen-hero h2 {
+    display: none;
+}
+
+.my-luxen-hero .flex-sizing {
+    flex-grow: 1;
+}
+
+.my-luxen-hero h3 {
+    font-size: 3rem;
+    font-weight: 300;
 }
