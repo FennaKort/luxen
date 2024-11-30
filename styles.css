@@ -79,10 +79,6 @@ li.nav-item {
 }
 
 @media (width < 60em) {
-    header{
-        padding-left: 3rem;
-        padding-right: 1.5rem;
-    }
     ul.nav-links {
         display: none;
     }
