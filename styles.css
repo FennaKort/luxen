@@ -154,7 +154,7 @@ article.my-luxen-hero {
     }
     article.my-luxen-hero {
         min-height: 25vh;
-        background-image: linear-gradient(rgba(0,0,0), rgba(0,0,0), rgba(0, 0, 0, 0.847), rgba(0,0,0,0));
+        background-image: linear-gradient(rgba(0,0,0), rgba(0,0,0), rgba(0,0,0), rgba(0, 0, 0, 0.847), rgba(0,0,0,0));
     }
     .my-luxen-hero h3 {
         font-size: 2rem;
