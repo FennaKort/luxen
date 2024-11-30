@@ -44,6 +44,7 @@ HEADER AND SITE NAV
 div.site-header {
     background-color: black;
 }
+
 header{
     display: flex;
     justify-items: center;
@@ -54,6 +55,10 @@ header{
 
 div.site-logo {
     flex-grow: 1;
+}
+
+div.hamburger-icon {
+    display: none;
 }
 
 ul.nav-links {
@@ -73,6 +78,32 @@ li.nav-item {
     background-color: #333333;
 }
 
+@media (width < 60em) {
+    header{
+        padding-left: 3rem;
+        padding-right: 1.5rem;
+    }
+    ul.nav-links {
+        display: none;
+    }
+    div.hamburger-icon {
+        width: 3rem;
+        height: 1.6rem;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .hamburger-bar {
+        display: block;
+        width: 3rem;
+        height: 0.32rem;
+        background-color: #ddac62;
+    }
+
+}
+
 /*
 ------------
 MAIN CONTENT
@@ -87,15 +118,6 @@ main.my-luxen-hero {
     background-size: auto auto;
     background-position: 55% 45%;
     background-repeat: no-repeat;
-}
-
-@media (orientation: portrait) {
-    main.my-luxen-hero {
-        background-attachment: fixed;
-        background-size: auto auto;
-        background-position: 55% 45%;
-        background-repeat: no-repeat;
-    }
 }
 
 article {
@@ -121,4 +143,22 @@ article.my-luxen-hero {
 .my-luxen-hero h3 {
     font-size: 3rem;
     font-weight: 300;
+}
+
+@media (orientation: portrait) {
+    main.my-luxen-hero {
+        background-attachment: fixed;
+        background-size: auto 100%;
+        background-position: 77% 45%;
+        background-repeat: no-repeat;
+    }
+    article.my-luxen-hero {
+        min-height: 25vh;
+        background-image: linear-gradient(rgba(0,0,0), rgba(0,0,0), rgba(0, 0, 0, 0.847), rgba(0,0,0,0));
+    }
+    .my-luxen-hero h3 {
+        font-size: 2rem;
+        font-weight: 700;
+        flex-grow: 1;
+    }
 }
